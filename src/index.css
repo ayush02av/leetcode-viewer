@@ -10,3 +10,7 @@
     width: var(--size);
     height: var(--size);
 }
+
+::-webkit-scrollbar {
+    display: none;
+}

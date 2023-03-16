@@ -113,7 +113,7 @@ export default function Dashboard() {
                                     fill: colors[i]
                                 })
                             }
-                            setLabel0(important0.slice(0, 20))
+                            setLabel0(important0.slice(0, 10))
 
                             const importantFeatures1 = data.data.analysis.features[1]
                             const important1 = []
@@ -124,7 +124,7 @@ export default function Dashboard() {
                                     fill: colors[i]
                                 })
                             }
-                            setLabel1(important1.slice(0, 20))
+                            setLabel1(important1.slice(0, 10))
 
                             const importantFeatures2 = data.data.analysis.features[2]
                             const important2 = []
@@ -135,14 +135,14 @@ export default function Dashboard() {
                                     fill: colors[i]
                                 })
                             }
-                            setLabel2(important2.slice(0, 20))
+                            setLabel2(important2.slice(0, 10))
                         }
                     })
             }
     }, [searchParams])
 
     return (
-        <div className="bg-slate-300 min-h-screen py-10 px-20">
+        <div className="bg-slate-400 min-h-screen py-10 px-20">
             <a href="/" className="back-icon"></a>
             {(!laoding && profile) ? (
                 <div className="flex flex-wrap">
