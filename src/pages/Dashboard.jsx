@@ -69,7 +69,7 @@ export default function Dashboard() {
                 setLoading(false)
                 axios({
                     method: 'GET',
-                    url: `https://leetcode-viewer.vercel.app/profile/${searchParams['username']}`
+                    url: `https://leetcodeviewer-api-production.up.railway.app/profile/${searchParams['username']}`
                 })
                     .then(function ({ data }) {
                         console.log(data)
